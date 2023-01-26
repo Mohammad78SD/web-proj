@@ -14,6 +14,13 @@
 .container {
     padding: 80px 120px;
 }
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
 .pic-border {
     border: 25px solid rgb(255, 255, 255);
     width: 100%;
@@ -30,13 +37,28 @@
     text-align: center;
     padding-bottom: 40px;
 }
+
+.carousel-indicators li {
+  border-width: 2px;
+  border-color: black;
+  background-color:lightgray;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.carousel-indicators li.active {
+  border-width: 2px;
+  border-color: black;
+  width: 2rem;
+  height: 2rem;
+}
 </style>
 
 <body>
 <!-- Plane Part -->
 <div class="container text-center plane">
   <img src="images/ring.png" style="width: 55px; height: 51px;">
-  <h3><strong>Our Plane</strong></h3>
+  <h2><strong>Our Plane</strong></h2>
   <p>Velit ullamco cillum in consequat ex aliquip occaecat.</p>
   <br>
   <div class="container-fluid text-center">
@@ -71,26 +93,65 @@
 <div class="container text-center">
   <div class="row">
     <img src="images/ring.png" style="width: 55px; height: 51px;">
-    <h2>Bridesmaids And Groomsmen</h2>
+    <h2><strong>Bridesmaids And Groomsmen</strong></h2>
     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod t dolor in reprehenderit in voluptate </span>
   </div>
   <div  class="row" style="margin-top: 50px;">
     <div class="col-md-4">
-        <img src="images/ber_img.jpg" alt="#" style="max-width: 90%;">
+        <img src="images/ber_img.jpg" alt="#" style="width: 95%;">
         <h3> Voluptate </h3>
     </div>
     <div class="col-md-4" style="margin-top: 130px; text-align: center;">
-        <img src="images/ber_img1.jpg" alt="#" style="max-width: 90%;">
+        <img src="images/ber_img1.jpg" alt="#" style="width: 95%;">
         <h3> Voluptate </h3>
     </div>
     <div class="col-md-4">
-        <img src="images/ber_img2.jpg" alt="#" style="max-width: 90%;">
+        <img src="images/ber_img2.jpg" alt="#" style="width: 95%;">
         <h3> Voluptate </h3>
     </div>
  </div>
  <div  class="row" style="margin-top: 30px;">
   <img src="images/round.png">
  </div>
+</div>
+
+<!-- What says Part -->
+<div class= "container-fluid text-center" style="margin-top: 80px;">
+  <img src="images/ring.png">
+  <h2><strong>What Is Says Our GROOMS</h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+  
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <div>
+          <img src="images/saya.png" style="margin-top: 50px; margin-bottom: 30px;">
+          <h3 style="color: black; margin-bottom: 30px;"><strong>Jacksmith sand</strong></h3>
+          <p style="color: black; margin-bottom: 100px;">There are many variations of passages of Lorem Ipsum available, but the<br>majority have suffered alteration in some form</p>
+        </div>
+      </div>
+      <div class="item">
+        <div>
+          <img src="images/saya.png" style="margin-top: 50px; margin-bottom: 30px;">
+          <h3 style="color: black; margin-bottom: 30px;"><strong>Jacksmith sand</strong></h3>
+          <p style="color: black; margin-bottom: 100px;">There are many variations of passages of Lorem Ipsum available, but the<br>majority have suffered alteration in some form</p>
+        </div>
+    </div>
+      <div class="item">
+        <div>
+          <img src="images/saya.png" style="margin-top: 50px; margin-bottom: 30px;">
+          <h3 style="color: black; margin-bottom: 30px;"><strong>Jacksmith sand</strong></h3>
+          <p style="color: black; margin-bottom: 100px;">There are many variations of passages of Lorem Ipsum available, but the<br>majority have suffered alteration in some form</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 </body>
