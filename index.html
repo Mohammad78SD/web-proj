@@ -21,6 +21,7 @@
     margin-right: auto;
     margin-left: auto;
 }
+
 .pic-border {
     border: 25px solid rgb(255, 255, 255);
     width: 100%;
@@ -124,6 +125,96 @@ footer {
   margin-bottom: 100px;
   margin-top: 50px;
 }
+
+.blog {
+     padding-top: 90px;
+}
+
+.blog_bg {
+     background: #fff;
+     box-shadow: 0 0px 21px -4px #ddd;
+}
+
+.blog_img figure {
+     margin: 0;
+}
+
+.blog_img figure img {
+     width: 100%;
+}
+
+.blog_img span {
+     position: absolute;
+     top: 43%;
+     right: 14px;
+     z-index: 9999;
+     background: #e6615a;
+     padding: 15px 27px;
+     font-weight: bold;
+     color: #fff;
+     font-size: 20px;
+     line-height: 24px;
+}
+
+.marriage_text {
+  text-align: left;
+     padding: 20px 25px 20px 0px;
+}
+
+.marriage_text span {
+     color: #c1c2c3;
+     font-size: 17px;
+     line-height: 20px;
+     padding-bottom: 25px;
+     display: block;
+}
+
+.marriage_text h3 {
+     color: #252525;
+     font-size: 24px;
+     line-height: 25px;
+     font-weight: bold;
+     padding-bottom: 30px;
+}
+
+.marriage_text p {
+     color: #202020;
+     font-size: 17px;
+     font-weight: lighter;
+     line-height: 30px;
+     padding-bottom: 43px;
+}
+
+.marriage_text h4 {
+     color: #202020;
+     font-size: 17px;
+     line-height: 20px;
+     font-weight: bold;
+}
+
+.padd_right {
+     padding-left: 30px;
+}
+
+.marriage_text h4 strong:hover {
+     color: #e6615a;
+     cursor: pointer;
+     padding-bottom: 0;
+}
+
+.margin_bottom30 {
+     margin-bottom: 30px;
+}
+
+.d_flex {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.blog-m{
+  padding: 30px 50px;
+}
 </style>
 
 <body>
@@ -186,7 +277,10 @@ footer {
     </div>
   </div>
 </div>
-
+<div class="container-fluid" style="text-align: center; z-index: 100; position: relative;">
+  <hr style="border-top: 2px solid black; width: 50%; margin-top: -2px;"/>
+  <img src="images/play.png" style="margin-top: -70px;">
+</div>
 <!-- Plane Part -->
 <div class="container text-center plane">
   <img src="images/ring.png" style="width: 55px; height: 51px;">
@@ -266,6 +360,55 @@ footer {
         </div>
      </div>
   </div>
+</div>
+
+<!-- from the blog -->
+<div class= "container-fluid text-center" style="margin-top: 80px;">
+  <img src="images/ring.png">
+  <h2><strong>FROM THE BLOG</h2>
+    <div class="row blog-m">
+      <div class="col-sm-12">
+         <div class="blog_bg" style="margin-bottom: 30px;">
+            <div class="row d_flex">
+               <div class="col-md-6">
+                  <div class="blog_img">
+                     <figure><img src="images/blog_img1.jpg" alt="#" style="width: 100%;"></figure>
+                     <span>06<br>Feb</span>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="marriage_text">
+                     <span>Post by : Marriage </span>
+                     <h3>Tempor incididunt ut labore et dolore</h3>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                     <h4><strong>Like</strong> <strong class="padd_right">Comment</strong></h4>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="col-sm-12">
+         <div class="blog_bg">
+            <div class="row d_flex">
+               <div class="col-md-6">
+                  <div class="blog_img">
+                     <figure><img src="images/blog_img2.jpg" alt="#" style="width: 100%;"></figure>
+                     <span>06<br>Feb</span>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="marriage_text">
+                     <span>Post by : Marriage </span>
+                     <h3>Tempor incididunt ut labore et dolore</h3>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                     <h4><strong>Like</strong> <strong class="padd_right">Comment</strong></h4>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+  
 </div>
 
 <!-- What says Part -->
