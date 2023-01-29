@@ -37,7 +37,6 @@
     text-align: center;
     padding-bottom: 40px;
 }
-
 .carousel-indicators li {
   border-width: 2px;
   border-color: black;
@@ -45,12 +44,25 @@
   width: 1.5rem;
   height: 1.5rem;
 }
-
 .carousel-indicators li.active {
   border-width: 2px;
   border-color: black;
   width: 2rem;
   height: 2rem;
+}
+.caro-main li{
+  background-color:black;
+  border: transparent;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+.caro-main li.active{
+  background-color:coral;
+  border: transparent;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
 }
 .about {
     background: url(images/about_bg.jpg);
@@ -60,7 +72,7 @@
     margin-top: 90px;
 }
 .read_more {
-    font-size: 17px;
+    font-size: 14px;
     background-color: #413c31;
     color: #fff;
     padding: 10px 0px;
@@ -73,9 +85,108 @@
     border-radius: 10px;
     height: 43px;
 }
+footer {
+  background-color: #2d2d30;
+  color: #f5f5f5;
+  padding: 20px;
+}
+
+.navbar {
+  margin-bottom: 0;
+  background-color: transparent;
+  z-index: 9999;
+  border: 0;
+  font-size: 17px !important;
+  line-height: 1.42857143 !important;
+  border-radius: 0;
+}
+.navbar-brand{
+  font-weight: bold;
+  color: #fff!important;
+}
+.navbar li a, .navbar .navbar-brand {
+  color: black !important;
+  margin-left: 50px;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+  color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  color: #fff !important;
+}
+.main-carousel{
+  text-align: left;
+  margin-left: 100px;
+  margin-right: 300px;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
 </style>
 
 <body>
+<!--navbar and carousel-->
+
+<div id="myCarousel" class="carousel slide text-center" data-ride="carousel" style="background-image: url(images/banner2.jpg);background-size: 100% 100%;">
+
+  <nav class="navbar navbar-default navbar-top" style="padding:30px 100px">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">2Rings</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#contact">Home</a></li>
+          <li><a href="#about" class="active">About</a></li>
+          <li><a href="#services">Service</a></li>
+          <li><a href="#portfolio">Blog</a></li>
+          <li><a href="#pricing">Contact US</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Indicators -->
+  <ol class="carousel-indicators caro-main" style="transform: rotate(90deg); position: relative; bottom: -180px; margin-left: 60px;">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <div class="main-carousel">
+        <h3 style="color: black; margin-bottom: 70px; font-size: x-large;"><strong>Wedding <span style="color: coral;">Couple</span></strong></h3>
+        <p style="color: black; margin-bottom: 100px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+        <button type="button" class="btn" style="margin-top: -40px; width: 190px; height: 60px; border-radius: 50px; background-color: #2d2d30; color: #fff;">Get A Quote</button>
+      </div>
+    </div>
+    <div class="item">
+      <div class="main-carousel">
+        <h3 style="color: black; margin-bottom: 70px; font-size: x-large;"><strong>Wedding <span style="color: coral;">Couple</span></strong></h3>
+        <p style="color: black; margin-bottom: 100px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+        <button type="button" class="btn" style="margin-top: -40px; width: 190px; height: 60px; border-radius: 50px; background-color: #2d2d30; color: #fff;">Get A Quote</button>
+      </div>
+  </div>
+    <div class="item">
+      <div class="main-carousel">
+        <h3 style="color: black; margin-bottom: 70px; font-size: x-large;"><strong>Wedding <span style="color: coral;">Couple</span></strong></h3>
+        <p style="color: black; margin-bottom: 100px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+        <button type="button" class="btn" style="margin-top: -40px; width: 190px; height: 60px; border-radius: 50px; background-color: #2d2d30; color: #fff;">Get A Quote</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- Plane Part -->
 <div class="container text-center plane">
   <img src="images/ring.png" style="width: 55px; height: 51px;">
@@ -196,8 +307,13 @@
   </div>
 </div>
 
+<!-- Contact -->
 
+
+<!-- footer -->
+<footer class="text-center">
+  <p>© 2023 All Rights Reserved. MSDOfficial</p>
+</footer>
 
 </body>
-
 </html>
